@@ -1,0 +1,71 @@
+.work--container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 'form render';
+}
+
+.work-form--container {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 600px;
+  grid-area: 'form';
+}
+
+.rendered-work--container {
+  width: 800px;
+  border-radius: 15px;
+  box-shadow: -4px -4px 10px rgba(227, 227, 227, 0.534) inset;
+  grid-area: 'render';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.rendered-work--container > h2 {
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.company-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.company-box > p {
+  margin: 0;
+}
+
+textarea {
+  appearance: none;
+  box-shadow: 4px 4px 10px rgba(227, 227, 227, 0.534);
+  border-radius: 15px;
+  border: none;
+  padding: 15px;
+  font-size: 17px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 10px 20px 0 0;
+}
+
+.index{
+  color: rgb(147, 147, 147);
+  margin-bottom: 0;
+}
+
+.description-box {
+  width: 600px;
+}
+
+.work-description {
+  height: fit-content;
+  line-break: anywhere;
+  margin: 0;
+}
+
+@media screen and (max-width: 1600px) {
+  input {
+    width: 90%;
+  }
+}

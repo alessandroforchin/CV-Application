@@ -1,0 +1,76 @@
+.edu--container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 'form render';
+}
+
+.edu-form--container {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 600px;
+  grid-area: 'form';
+}
+
+.rendered-edu--container {
+  width: 800px;
+  border-radius: 15px;
+  box-shadow: -4px -4px 10px rgba(227, 227, 227, 0.534) inset;
+  grid-area: 'render';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.index-box {
+  background-color: #213547;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.index-box > h1 {
+  margin-left: 20px;
+  color: #fff;
+  font-size: 45px;
+}
+
+.rendered-edu--container > h2 {
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.line {
+  border: 1px solid black;
+  width: 310px;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.line:hover {
+  width: 50px;
+  cursor: pointer;
+}
+
+.school-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.school-box > p {
+  margin: 0;
+}
+
+.date-box {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+@media screen and (max-width: 1600px) {
+  input {
+    width: 90%;
+  }
+}
